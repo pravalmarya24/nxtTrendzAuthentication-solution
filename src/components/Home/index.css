@@ -1,0 +1,92 @@
+/* Write your CSS code here */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.website-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logout-logo-img-size {
+  height: 40px;
+  width: 170px;
+}
+
+.navbar-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 267px;
+}
+
+.para {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.logout-btn {
+  height: 25px;
+  width: 77px;
+  border-width: 0;
+  border-radius: 4px;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.bottom-container {
+  padding: 30px;
+}
+
+.description-container {
+  width: 500px;
+  padding: 25px;
+}
+
+.description-heading {
+  font-family: 'Roboto';
+  font-size: 54px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.description-para {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.shop-btn {
+  height: 35px;
+  width: 140px;
+  border-width: 0;
+  border-radius: 4px;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
