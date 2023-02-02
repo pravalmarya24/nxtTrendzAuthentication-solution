@@ -15,9 +15,17 @@ class Home extends Component {
             />
           </div>
           <div className="navbar-link-container">
-            <p className="para">Home</p>
-            <p className="para">Products</p>
-            <p className="para">Cart</p>
+            <ul className="unordered-list">
+              <li>
+                <p className="para">Home</p>
+              </li>
+              <li>
+                <p className="para">Products</p>
+              </li>
+              <li>
+                <p className="para">Cart</p>
+              </li>
+            </ul>
             <button className="logout-btn" type="button">
               Logout
             </button>
@@ -32,7 +40,7 @@ class Home extends Component {
               Fashion is part of the daily air and it does not quite help that
               it changes all the time. Clothes have always been a marker of the
               era and we are in a revolution. Your fashion makes you been seen
-              and heard that way yoeu are. So, celebrate the seasons new and
+              and heard that way you are. So, celebrate the seasons new and
               exiting fashion in your own way.
             </p>
             <button className="shop-btn" type="button">

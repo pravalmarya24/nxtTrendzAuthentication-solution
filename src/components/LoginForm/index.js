@@ -2,7 +2,7 @@ import {Component} from 'react'
 import './index.css'
 // Write your JS code here
 class LoginForm extends Component {
-  state = {username: '', password: ''}
+  state = {username: '', password: '', errorMessageVal: ''}
 
   onTakeUserName = event => {
     this.setState({username: event.target.value})
@@ -22,6 +22,20 @@ class LoginForm extends Component {
     const {username, password} = this.state
     const userDetails = {username, password}
 
+    let errorMessage = ''
+    if (username === 'rahul' && password === '') {
+      errorMessage = "Username and Password didn't match"
+    } else if (username === '' && password !== '') {
+      errorMessage = "Username and Password didn't match"
+    } else if (username !== 'rahul' && password !== 'rahul@2021') {
+      errorMessage = "Username and Password didn't match"
+    } else if (username === 'rahul' && password !== 'rahul@2021') {
+      errorMessage = "Username and Password didn't match"
+    } else {
+      errorMessage = ''
+    }
+    console.log(errorMessage)
+
     const url = 'https://apis.ccbp.in/login'
 
     const options = {
@@ -33,11 +47,11 @@ class LoginForm extends Component {
     if (response.ok === true) {
       this.onLoginSuccess()
     }
-    this.setState({username: '', password: ''})
+    this.setState({username: '', password: '', errorMessageVal: errorMessage})
   }
 
   render() {
-    const {username, password} = this.state
+    const {username, password, errorMessageVal} = this.state
     return (
       <div className="login-page-bg-container">
         <div className="login-website-image-container">
@@ -86,6 +100,7 @@ class LoginForm extends Component {
             <button className="login-btn" type="submit">
               Login
             </button>
+            <p className="error-message-para">{errorMessageVal}</p>
           </form>
         </div>
       </div>
